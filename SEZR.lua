@@ -14747,6 +14747,33 @@ local TextHelp = [[*
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
 end
+elseif Text and Text:match('(%d+)/abdo1') then
+local UserId = Text:match('(%d+)/abdo1')
+if tonumber(IdUser) == tonumber(UserId) then
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '• 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = 'https://t.me/ttccss'}, 
+},
+{
+{text = '• 𝙗𝙤𝙩 𝙨𝙚𝙯𝙧 •', url = 'https://t.me/asdsobot'}, 
+},
+{
+{text = 'رجوع', data = IdUser..'/abdo5'},
+},
+}
+}
+local TextHelp = [[*
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧
+ــــــــــــــــــــــــــــــــــــــــــــــ
+• 𝙩𝙝𝙚 𝙗𝙚𝙨𝙩 𝙨𝙤𝙪𝙧𝙘𝙚 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢
+ــــــــــــــــــــــــــــــــــــــــــــــ
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧
+*]]
+LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
+end
+
 
 if Text and Text:match('(%d+)/zog1') then
 local UserId = Text:match('(%d+)/zog1')
