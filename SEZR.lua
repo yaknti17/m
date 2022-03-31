@@ -5838,6 +5838,26 @@ end
 LuaTele.sendText(msg_chat_id,msg_id,'\n* ◉ تم ترقيه - ('..y..') ادمنيه *',"md",true)  
 end
 
+if Text and Text:match('(%d+)/Re@') then
+local UserId = Text:match('(%d+)/Re@')
+if tonumber(IdUser) == tonumber(UserId) then
+Abs = math.random(2,140); 
+local Text ='*▹￤تم اختيار الاغنيه لك*'
+local msg_id = Msg_id/2097152/0.5
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
+},
+{
+{text = '❲ 𝗦𝙾𝚄𝚁𝙲𝙴 𝗗𝚁𝙰𝙲𝙾𝙽 ❳',url="t.me/e1o_2"}
+},
+}
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. ChatId .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+LuaTele.deleteMessages(ChatId,{[1]= Msg_id})
+end
+end
+
 if text == "صورتي" then
 if Redis:get(SEZR.."Status:photo"..msg.chat_id) then
 local photo = LuaTele.getUserProfilePhotos(msg.sender.user_id)
@@ -9949,17 +9969,19 @@ return LuaTele.sendText(msg_chat_id,msg_id,m,"md",true)
 end
 end
 if text == "غنيلي" then
-local t = "اليك اغنيه عشوائيه من البوت"
-Num = math.random(8,83)
-Mhm = math.random(108,143)
-Mhhm = math.random(166,179)
-Mmhm = math.random(198,216)
-Mhmm = math.random(257,626)
-local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
-local Rrr = Texting[math.random(#Texting)]
-local m = "https://t.me/mmsst13/"..Rrr..""
-local rep = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
+Abs = math.random(2,140); 
+local Text ='*▹￤تم اختيار الاغنيه لك*'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = ': مره اخرى 🔃.', callback_data = IdUser..'/Re@'},
+},
+{
+{text = '❲ 𝗦𝙾𝚄𝚁𝙲𝙴 𝗗𝚁𝙰𝙲𝙾𝙽 ❳',url="t.me/e1o_2"}
+},
+}
+local msg_id = msg.id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "استوري" or text == 'فيديوهات' then
 local t = "مرحبا اليك استوري عشوائي 🌝💜"
