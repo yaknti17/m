@@ -13165,10 +13165,8 @@ return LuaTele.sendText(msg_chat_id,msg_id,Redis:get(SEZR.."Start:Bot"),"md",fal
 end
 end
 else
-if text == '/start' then
-if not msg.ControllerBot then 
-keyboard = {} 
-keyboard.inline_keyboard = {
+local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
+data = {
 {
 {text = '𓄼 المبرمج تيمو 𓄹',type = 'text'},{text = '𓄼 المبرمج سيزر 𓄹',type = 'text'}
 },
@@ -13206,12 +13204,12 @@ keyboard.inline_keyboard = {
 {text = '𓄼 الغاء الامر 𓄹',type = 'text'},
 },
 }
+}
 return LuaTele.sendText(msg_chat_id,msg_id,'*اهلا بك عزيزي المطور الاساسي*', 'md', false, false, false, false, reply_markup)
 end
 end
 if text == '𓄼 اوامر التفعيل 𓄹' then
 if not msg.ControllerBot then 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*هاذا الامر يخص⦗ '..Controller_Num(1)..' ⦘* ',"md",true)  
 end
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
