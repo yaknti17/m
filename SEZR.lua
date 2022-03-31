@@ -10141,7 +10141,6 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*
 elseif text == 'عبضو' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* 𖤓 هاذا الامر يخص ❴ '..Controller_Num(7)..' ❵* ',"md",true)  
-local first_name = user_info.first_name
 video = "http://t.me/t_imoo/4"
 end
 if ChannelJoin(msg) == false then
