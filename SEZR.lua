@@ -10150,10 +10150,10 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𓄼•❶•𓄹 ', data = msg.sender.user_id..'/abdo1'}, {text = '𓄼•❷•𓄹 ', data = msg.sender.user_id..'/abdo2'}, 
+{text = '• 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 •', data = msg.sender.user_id..'/abdo1'}, {text = '• 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨 •', data = msg.sender.user_id..'/abdo2'}, 
 },
 {
-{text = '𓄼•❸•𓄹 ', data = msg.sender.user_id..'/abdo3'}, {text = '𓄼•❹•𓄹 ', data = msg.sender.user_id..'/abdo4'}, 
+{text = '• 𝙜𝙖𝙢𝙚𝙨 •', data = msg.sender.user_id..'/abdo3'}, {text = '• 𝙯𝙤𝙙𝙞𝙖𝙘 •', data = msg.sender.user_id..'/abdo4'}, 
 },
 {
 {text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹 ', url = 't.me/omar_goo_noor'}, 
@@ -10161,14 +10161,7 @@ data = {
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id, [[*
-╭───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╮
-┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
-┇▱▰▱▰▱▰▱▰▱▰▱▰▱
-┇𓄼[ᴛʜᴇ ʙᴇѕᴛ ѕᴏ𝗎ʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ](http://t.me/RBBOU)𓄹
-┇▱▰▱▰▱▰▱▰▱▰▱▰▱
-┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
-╰───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╯
-*]],"md",false, false, false, false, reply_markup)
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧\n• 𝙩𝙝𝙚 𝙗𝙚𝙨𝙩 𝙨𝙤𝙪𝙧𝙘𝙚 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢\n• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧*]],"md",false, false, false, false, reply_markup)
 elseif text == 'الالعاب' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*◉ هاذا الامر يخص⦗ '..Controller_Num(7)..' ⦘* ',"md",true)  
