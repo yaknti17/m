@@ -14747,20 +14747,23 @@ local TextHelp = [[*
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
 end
-elseif Text and Text:match('(%d+)/abdo1') then
-local UserId = Text:match('(%d+)/abdo1')
+elseif Text and Text:match('(%d+)/abdo3') then
+local UserId = Text:match('(%d+)/abdo3')
 if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '• 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = 'https://t.me/ttccss'}, 
+{text = '𓄼•❶•𓄹', data = IdUser..'/help1'}, {text = '𓄼•❷•𓄹', data = IdUser..'/help2'}, 
 },
 {
-{text = '• 𝙗𝙤𝙩 𝙨𝙚𝙯𝙧 •', url = 'https://t.me/asdsobot'}, 
+{text = '𓄼•❸•𓄹', data = IdUser..'/help3'}, {text = '𓄼•❹•𓄹', data = IdUser..'/help4'}, 
 },
 {
-{text = 'رجوع', data = IdUser..'/abdo5'},
+{text = '𓄼•❺•𓄹', data = IdUser..'/listallAddorrem'}, {text = '𓄼•❻•𓄹', data = IdUser..'/NoNextSeting'}, 
+},
+{
+{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = 'https://t.me/RBBOU'}, 
 },
 }
 }
