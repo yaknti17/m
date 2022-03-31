@@ -13231,7 +13231,7 @@ data = {
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,' *اهلا بك عزيزي المطور الاساسي* اوامر التفعيل', 'md', false, false, false, false, reply_markup)
-if text == '/start' then
+if text == '𓄼 اوامر التفعيل 𓄹' then
 if not msg.ControllerBot then 
 end
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
