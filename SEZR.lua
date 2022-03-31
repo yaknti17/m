@@ -13206,7 +13206,6 @@ keyboard.inline_keyboard = {
 {text = '𓄼 الغاء الامر 𓄹',type = 'text'},
 },
 }
-}
 return LuaTele.sendText(msg_chat_id,msg_id,'*اهلا بك عزيزي المطور الاساسي*', 'md', false, false, false, false, reply_markup)
 end
 end
