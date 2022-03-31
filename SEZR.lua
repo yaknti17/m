@@ -11181,7 +11181,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = NamesBots, url = 't.me/RBBOU'}, 
+{text = NamesBots, url = 't.me/CH_SEZR'}, 
 },
 {
 {text =first_name, url = "https://t.me/RBBOU"}
@@ -11225,7 +11225,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = NamesBots, url = 't.me/RBBOU'}, 
+{text = NamesBots, url = 't.me/CH_SEZR'}, 
 },
 {
 {text =first_name, url = "https://t.me/RBBOU"}
@@ -12747,6 +12747,36 @@ keyboard.inline_keyboard = {
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+elseif text == 'ريبورتر' or text == 'تيم ريبورتر' or text == 'تيم' or text == 'التيم' then
+photo = "https://t.me/sorcy/6"
+local Name = 'تيم ريبورتر ياحب اعظم تيم في التلي تنورنا في اي وقت'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '𓄼•ᴏᴡɴᴇʀ ᴛᴇᴀᴍ¹•𓄹', url = "https://t.me/ttccss"}
+},
+{
+{text = '𓄼•ᴏᴡɴᴇʀ ᴛᴇᴀᴍ²•𓄹', url = "https://t.me/Snp_Zmlkawe"},{text = '𓄼•ᴏᴡɴᴇʀ ᴛᴇᴀᴍ³•𓄹', url = "https://t.me/EL_ME_RE_KH_Y9"}
+},
+{
+{text = '𓄼•ʙᴇɴᴛ ᴛɪᴍᴏ¹•𓄹', url = "https://t.me/bent_SEZR"}
+},
+{
+{text = '𓄼•ʙᴇɴᴛ ᴛɪᴍᴏ²•𓄹', url = "https://t.me/bent_ti_mo"},{text = '𓄼•ʙᴇɴᴛ ᴛɪᴍᴏ³•𓄹', url = "https://t.me/bent_dad_SEZR"}
+},
+{
+{text = '𓄼•ʙᴏᴛ ᴛᴇᴀᴍ•𓄹', url = "https://t.me/SEZR8BOT"}
+},
+{
+{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/postat_selva"}
+},
+{
+{text = '𓄼•™ʽ𝑻 𝑺ᯓ𝑺𝑬𝑳𝑽𝑨✓⃟🎌๏͈͈͈͈͈͈͈⌯•𓄹', url = "https://t.me/br_selva"}
+},
+}
+local msgg = msg_id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
 if text == "بوت" or text == "البوت" or text == "bot" or text == "Bot" then
 local photo = LuaTele.getUserProfilePhotos(SEZR)
 local UserInfo = LuaTele.getUser(SEZR)
@@ -12775,7 +12805,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = NamesBots, url = 't.me/RBBOU'}, 
+{text = NamesBots, url = 't.me/CH_SEZR'}, 
 },
 {
 {text =first_name, url = "https://t.me/RBBOU"}
@@ -12819,7 +12849,7 @@ if photo.total_count > 0 then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = NamesBots, url = 't.me/RBBOU'}, 
+{text = NamesBots, url = 't.me/CH_SEZR'}, 
 },
 {
 {text =first_name, url = "https://t.me/RBBOU"}
