@@ -10138,6 +10138,37 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*
 ╣•❺• ‹ اوامر التفعيل والتعطيل ›
 ╝•❻• ‹ اوامر الفتح والقفل ›
 *]],"md",false, false, false, false, reply_markup)
+elseif text == 'سورس سيزر' then
+if not msg.Addictive then
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* 𖤓 هاذا الامر يخص ❴ '..Controller_Num(7)..' ❵* ',"md",true)  
+end
+if ChannelJoin(msg) == false then
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/omar_goo_noor'}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𖤓 عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
+end
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '𓄼•❶•𓄹 ', data = msg.sender.user_id..'/abdo1'}, {text = '𓄼•❷•𓄹 ', data = msg.sender.user_id..'/abdo2'}, 
+},
+{
+{text = '𓄼•❸•𓄹 ', data = msg.sender.user_id..'/abdo3'}, {text = '𓄼•❹•𓄹 ', data = msg.sender.user_id..'/abdo4'}, 
+},
+{
+{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹 ', url = 't.me/omar_goo_noor'}, 
+},
+}
+}
+return LuaTele.sendText(msg_chat_id,msg_id, [[*
+╭───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╮
+┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
+┇▱▰▱▰▱▰▱▰▱▰▱▰▱
+┇𓄼[ᴛʜᴇ ʙᴇѕᴛ ѕᴏ𝗎ʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ](http://t.me/RBBOU)𓄹
+┇▱▰▱▰▱▰▱▰▱▰▱▰▱
+┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
+╰───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╯
+*]],"md",false, false, false, false, reply_markup)
 elseif text == 'الالعاب' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*◉ هاذا الامر يخص⦗ '..Controller_Num(7)..' ⦘* ',"md",true)  
