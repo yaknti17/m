@@ -12698,8 +12698,8 @@ local T =[[
 ┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
 ╰───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╯
 ]]
-keyboard = {} 
-keyboard.inline_keyboard = {
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
 {
 {text = '• 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 •', data = msg.sender.user_id..'/abdo1'}, {text = '• 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨 •', data = msg.sender.user_id..'/abdo2'}, 
 },
