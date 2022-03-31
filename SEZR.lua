@@ -2218,13 +2218,13 @@ return LuaTele.sendText(msg_chat_id,msg_id,' ◉ الملف لا يدعم هاذ
 end
 end
 end
-if text == 'تحديث السورس' or text == 'تحديث السورس ⌔' then
+if text == 'تحديث السورس' or text == '𓄼 تحديث السورس 𓄹' then
 if not msg.ControllerBot then 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* ◉ هاذا الامر يخص 𓄼 '..Controller_Num(1)..' 𓄹* ',"md",true)  
 end
 --os.execute('rm -rf SEZR.lua')
 --download('https://raw.githubusercontent.com/yaknti172/yaknti17/master/SEZR.lua','SEZR.lua')
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙تم تحديث السورس * ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n* ◉ تم تحديث السورس * ',"md",true)  
 end
 if text == '𓄼 تعطيل الاذاعه 𓄹' or text == 'تعطيل الاذاعه' then
 if not msg.ControllerBot then 
@@ -9821,10 +9821,10 @@ keyboardd.inline_keyboard = {
 {text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
 },
 {
-{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
+{text = '𓄼•𝙜𝙧𝙤𝙪𝙥•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
 },
 {
-{text = '𓄼•ʙᴏᴛ ѕᴇʟᴠᴀ•𓄹',url="t.me/SEZR8Bot"}
+{text = '𓄼•𝙗𝙤𝙩 𝙨𝙚𝙯𝙧•𓄹',url="t.me/SEZR8Bot"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9837,10 +9837,10 @@ keyboardd.inline_keyboard = {
 {text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
 },
 {
-{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
+{text = '𓄼•𝙜𝙧𝙤𝙪𝙥•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
 },
 {
-{text = '𓄼•ʙᴏᴛ ѕᴇʟᴠᴀ•𓄹',url="t.me/SEZR8Bot"}
+{text = '𓄼•𝙗𝙤𝙩 𝙨𝙚𝙯𝙧•𓄹',url="t.me/SEZR8Bot"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -9994,24 +9994,25 @@ local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
 video = "http://t.me/t_imoo/4"
 local T =[[
-╭───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╮
-┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
-┇▱▰▱▰▱▰▱▰▱▰▱▰▱
-┇𓄼[ᴛʜᴇ ʙᴇѕᴛ ѕᴏ𝗎ʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ](http://t.me/RBBOU)𓄹
-┇▱▰▱▰▱▰▱▰▱▰▱▰▱
-┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
-╰───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╯
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧
+ـــــــــــــــــــــــ
+• 𝙩𝙝𝙚 𝙗𝙚𝙨𝙩 𝙨𝙤𝙪𝙧𝙘𝙚 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢
+ـــــــــــــــــــــــ
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 •', data = msg.sender.user_id..'/abdo1'}, {text = '• 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨 •', data = msg.sender.user_id..'/abdo2'}, 
+{text =first_name, url = "https://t.me/RBBOU"}
 },
 {
-{text = '• 𝙜𝙖𝙢𝙚𝙨 •', data = msg.sender.user_id..'/abdo3'}, {text = '• 𝙯𝙤𝙙𝙞𝙖𝙘 •', data = msg.sender.user_id..'/abdo4'}, 
+{text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
 },
 {
-{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹 ', url = 't.me/omar_goo_noor'}, 
+{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹', url = "https://t.me/RBBOU"}
+},
+{
+{text = '𓄼•اضف البوت لمجموعتك•𓄹', url = 't.me/'..UserBot..'?startgroup=new'},
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -10094,7 +10095,7 @@ keyboard.inline_keyboard = {
 {text = '𓄼•ʙᴏᴛ ᴛᴇᴀᴍ•𓄹', url = "https://t.me/SEZR8BOT"}
 },
 {
-{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/postat_selva"}
+{text = '𓄼•𝙜𝙧𝙤𝙪𝙥•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/postat_selva"}
 },
 {
 {text = '𓄼•™ʽ𝑻 𝑺ᯓ𝑺𝑬𝑳𝑽𝑨✓⃟🎌๏͈͈͈͈͈͈͈⌯•𓄹', url = "https://t.me/br_selva"}
@@ -12639,7 +12640,7 @@ local msg_id = msg.id/2097152/0.5
 end
 end
  
-if text == '𓄼 المبرمج سيزر 𓄹' or text == 'مصطفي' or text == 'المبرمج' or text == 'صاصا' then  
+if text == '𓄼 المبرمج سيزر 𓄹' or text == 'سيزر' or text == 'المبرمج' or text == 'سيزر' then  
 local UserId_Info = LuaTele.searchPublicChat("ttccss")
 if UserId_Info.id then
 local  ban = LuaTele.getUser(UserId_Info.id)
@@ -12658,10 +12659,10 @@ keyboardd.inline_keyboard = {
 {text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
 },
 {
-{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
+{text = '𓄼•𝙜𝙧𝙤𝙪𝙥•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
 },
 {
-{text = '𓄼•ʙᴏᴛ ѕᴇʟᴠᴀ•𓄹',url="t.me/SEZR8Bot"}
+{text = '𓄼•𝙗𝙤𝙩 𝙨𝙚𝙯𝙧•𓄹',url="t.me/SEZR8Bot"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12674,10 +12675,10 @@ keyboardd.inline_keyboard = {
 {text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
 },
 {
-{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
+{text = '𓄼•𝙜𝙧𝙤𝙪𝙥•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
 },
 {
-{text = '𓄼•ʙᴏᴛ ѕᴇʟᴠᴀ•𓄹',url="t.me/SEZR8Bot"}
+{text = '𓄼•𝙗𝙤𝙩 𝙨𝙚𝙯𝙧•𓄹',url="t.me/SEZR8Bot"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -12690,24 +12691,25 @@ local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
 video = "http://t.me/t_imoo/4"
 local T =[[
-╭───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╮
-┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
-┇▱▰▱▰▱▰▱▰▱▰▱▰▱
-┇𓄼[ᴛʜᴇ ʙᴇѕᴛ ѕᴏ𝗎ʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ](http://t.me/RBBOU)𓄹
-┇▱▰▱▰▱▰▱▰▱▰▱▰▱
-┇𓄼[ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ • 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •](http://t.me/RBBOU)𓄹
-╰───━━──𓄼•[✣](http://t.me/RBBOU)•𓄹──━━───╯
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧
+ـــــــــــــــــــــــ
+• 𝙩𝙝𝙚 𝙗𝙚𝙨𝙩 𝙨𝙤𝙪𝙧𝙘𝙚 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢
+ـــــــــــــــــــــــ
+• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧
 ]]
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
+keyboard = {} 
+keyboard.inline_keyboard = {
 {
-{text = '• 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 •', data = msg.sender.user_id..'/abdo1'}, {text = '• 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨 •', data = msg.sender.user_id..'/abdo2'}, 
+{text =first_name, url = "https://t.me/RBBOU"}
 },
 {
-{text = '• 𝙜𝙖𝙢𝙚𝙨 •', data = msg.sender.user_id..'/abdo3'}, {text = '• 𝙯𝙤𝙙𝙞𝙖𝙘 •', data = msg.sender.user_id..'/abdo4'}, 
+{text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
 },
 {
-{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹 ', url = 't.me/omar_goo_noor'}, 
+{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹', url = "https://t.me/RBBOU"}
+},
+{
+{text = '𓄼•اضف البوت لمجموعتك•𓄹', url = 't.me/'..UserBot..'?startgroup=new'},
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -12790,7 +12792,7 @@ keyboard.inline_keyboard = {
 {text = '𓄼•ʙᴏᴛ ᴛᴇᴀᴍ•𓄹', url = "https://t.me/SEZR8BOT"}
 },
 {
-{text = '𓄼•ɢʀᴏ𝗎ᴘ•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/postat_selva"}
+{text = '𓄼•𝙜𝙧𝙤𝙪𝙥•𓄹', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/postat_selva"}
 },
 {
 {text = '𓄼•™ʽ𝑻 𝑺ᯓ𝑺𝑬𝑳𝑽𝑨✓⃟🎌๏͈͈͈͈͈͈͈⌯•𓄹', url = "https://t.me/br_selva"}
