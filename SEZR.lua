@@ -13231,29 +13231,6 @@ data = {
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,' *اهلا بك عزيزي المطور الاساسي* اوامر التفعيل', 'md', false, false, false, false, reply_markup)
-if text == '𓄼 اوامر التفعيل 𓄹' then
-if not msg.ControllerBot then 
-end
-local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
-data = {
-{
-{text = 'السورس',type = 'text'},{text = 'المطور', type = 'text'},
-},
-{
-{text = 'استوري',type = 'text'},{text = 'غنيلي', type = 'text'},
-},
-{
-{text = 'الالعاب',type = 'text'},{text = 'الاوامر',type = 'text'},
-},
-{
-{text = 'ارد انصب',type = 'text'},{text = 'اوامر التسليه',type = 'text'},
-},
-{
-{text = '𓄼 القائمه الرئيسيه 𓄹',type = 'text'},
-},
-}
-}
-return LuaTele.sendText(msg_chat_id,msg_id,' *اهلا بك عزيزي المطور الاساسي* اوامر التفعيل', 'md', false, false, false, false, reply_markup)
 elseif text == '𓄼 اوامر الاذاعه 𓄹' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*هاذا الامر يخص⦗ '..Controller_Num(1)..' ⦘* ',"md",true)  
@@ -13278,6 +13255,47 @@ return LuaTele.sendText(msg_chat_id,msg_id,' *اهلا بك عزيزي المط�
 elseif text == '𓄼 القائمه الرئيسيه 𓄹' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*هاذا الامر يخص⦗ '..Controller_Num(1)..' ⦘* ',"md",true)  
+end
+local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
+data = {
+{
+{text = '𓄼 المبرمج تيمو 𓄹',type = 'text'},{text = '𓄼 المبرمج سيزر 𓄹',type = 'text'}
+},
+{
+{text = '𓄼 تغيير اسم البوت 𓄹',type = 'text'},{text = '𓄼 حذف اسم البوت 𓄹', type = 'text'},
+},
+{
+{text = '𓄼 الاحصائيات 𓄹',type = 'text'},
+},
+{
+{text = '𓄼 الجروبات 𓄹',type = 'text'},{text = '𓄼 المشتركين 𓄹', type = 'text'},
+},
+{
+{text = '𓄼 تغيير المطور الاساسي 𓄹',type = 'text'} 
+},
+{
+{text = '𓄼 اوامر اضف 𓄹',type = 'text'},{text = '𓄼 اوامر التفعيل 𓄹', type = 'text'},
+},
+{
+{text = '𓄼 جلب التوكن 𓄹',type = 'text'},
+},
+{
+{text = '𓄼 اوامر الاذاعه 𓄹',type = 'text'},{text = '𓄼 الاوامر 𓄹', type = 'text'},
+},
+{
+{text = '𓄼 جلب النسخه 𓄹',type = 'text'},
+},
+{
+{text = '𓄼 تحديث السورس 𓄹',type = 'text'},
+},
+{
+{text = '𓄼 الغاء الامر 𓄹',type = 'text'},
+},
+}
+}
+return LuaTele.sendText(msg_chat_id,msg_id,' *اهلا بك عزيزي المطور الاساسي* ', 'md', false, false, false, false, reply_markup)
+elseif text == '/start' then
+if not msg.ControllerBot then 
 end
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
