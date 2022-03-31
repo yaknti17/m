@@ -2218,13 +2218,13 @@ return LuaTele.sendText(msg_chat_id,msg_id,' ◉ الملف لا يدعم هاذ
 end
 end
 end
-if text == 'تحديث السورس' or text == '𓄼 تحديث السورس 𓄹' then
+if text == 'تحديث السورس' or text == 'تحديث السورس ⌔' then
 if not msg.ControllerBot then 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* ◉ هاذا الامر يخص 𓄼 '..Controller_Num(1)..' 𓄹* ',"md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 --os.execute('rm -rf SEZR.lua')
---download('https://raw.githubusercontent.com/EIGEBT/SEZR-SELVA/master/SEZR.lua','SEZR.lua')
-return LuaTele.sendText(msg_chat_id,msg_id,'\n* ◉ تم تحديث السورس * ',"md",true)  
+--download('https://raw.githubusercontent.com/yaknti172/yaknti17/master/SEZR.lua','SEZR.lua')
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙تم تحديث السورس * ',"md",true)  
 end
 if text == '𓄼 تعطيل الاذاعه 𓄹' or text == 'تعطيل الاذاعه' then
 if not msg.ControllerBot then 
