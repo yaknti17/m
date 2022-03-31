@@ -10141,7 +10141,6 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*
 elseif text == 'عبضو' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* 𖤓 هاذا الامر يخص ❴ '..Controller_Num(7)..' ❵* ',"md",true)  
-video = "http://t.me/t_imoo/4"
 end
 if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/omar_goo_noor'}, },}}
@@ -12705,17 +12704,15 @@ local T =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text =first_name, url = "https://t.me/RBBOU"}
+{text = '• 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 •', data = msg.sender.user_id..'/abdo1'}, {text = '• 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨 •', data = msg.sender.user_id..'/abdo2'}, 
 },
 {
-{text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
+{text = '• 𝙜𝙖𝙢𝙚𝙨 •', data = msg.sender.user_id..'/abdo3'}, {text = '• 𝙯𝙤𝙙𝙞𝙖𝙘 •', data = msg.sender.user_id..'/abdo4'}, 
 },
 {
-{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹', url = "https://t.me/RBBOU"}
+{text = '𓄼•• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 ••𓄹 ', url = 't.me/omar_goo_noor'}, 
 },
-{
-{text = '𓄼•اضف البوت لمجموعتك•𓄹', url = 't.me/'..UserBot..'?startgroup=new'},
-},
+}
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
