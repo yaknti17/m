@@ -9913,7 +9913,7 @@ local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
 local RinkBot = msg.Name_Controller
 photo = "https://t.me/gooman120/10761"
-local Text = '*𓄼• ᴡᴇʟᴄᴏᴍᴇ ʏᴀ->* ['..first_name..'](tg://user?id='..user_info.id..')\n*𓄼• ʏᴏᴜʀ ʀᴀɴᴋ->* ['..RinkBot..'](tg://user?id='..user_info.id..')\n*𓄼• ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ*\n'
+local Text = '• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧\nــــــــــــــــــــــــــــــــــــــــــــــ\n• 𝙩𝙝𝙚 𝙗𝙚𝙨𝙩 𝙨𝙤𝙪𝙧𝙘𝙚 𝙩𝙚𝙡𝙚𝙜𝙧𝙖𝙢\nــــــــــــــــــــــــــــــــــــــــــــــ\n• 𝙬𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙨𝙤𝙪𝙧𝙘𝙚 𝙧𝙚𝙗𝙤𝙧𝙩𝙚𝙧'
 keyboardd = {} 
 keyboard.inline_keyboard = {
 {
@@ -9924,7 +9924,7 @@ keyboard.inline_keyboard = {
 },
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/DEV_JABWA/88/'..photo..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/gooman120/10761/'..photo..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'بوت حذف' or text == 'بوت الحذف' or text == 'بووت حذف' then
 local user_info = LuaTele.getUser(msg.sender.user_id)
@@ -14172,6 +14172,31 @@ end
 end
 if Text and Text:match('(%d+)/help1') then
 local UserId = Text:match('(%d+)/help1')
+if tonumber(IdUser) == tonumber(UserId) then
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '• اوامر المطور •', data = IdUser..'/helpo1'}, {text = '• اوامر المطور الثانوي •', data = IdUser..'/helpo2'}, 
+},
+{
+{text = '• اوامر المطور الاساسي •', data = IdUser..'/helpo3'}, 
+},
+{
+{text = '• القائمه الرئيسيه •', data = IdUser..'/helpall'}, 
+},
+{
+{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = 'https://t.me/RBBOU'}, 
+},
+}
+}
+local TextHelp = [[*
+ مرحبا بك في قسم اوامر اصحاب الرتب
+*]]
+LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
+end
+if Text and Text:match('(%d+)/mydev') then
+local UserId = Text:match('(%d+)/mydev')
 if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
