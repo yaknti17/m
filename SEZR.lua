@@ -106,7 +106,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1825532106,1372188096}  
+local ListSudos ={Sudo_Id,1825532106}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -127,8 +127,6 @@ Distinguished = Redis:sismember(SEZR.."SEZR:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1825532106 then
 Status = 'المبرمج سيزر'
-elseif UserId == 1372188096 then  
-Status = 'المبرمج عموره'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == SEZR then
@@ -2284,7 +2282,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName[2]:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -2752,7 +2750,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⦁ عذرا لا يوجد حساب بهاذا المعرف *","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*⦁ عذرا لا تستطيع استخدام معرف قناة او جروب *","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n*⦁ عذرا لا تستطيع استخدام معرف قناة او كروب *","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⦁ عذرا لا تستطيع استخدام معرف البوت *","md",true)  
@@ -2962,7 +2960,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName[2]:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -3400,7 +3398,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName[2]:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4562,7 +4560,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4574,9 +4572,6 @@ if Controller(msg_chat_id,UserId_Info.id) == 'المطور الثانوي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,UserId_Info.id).." •*","md",true)  
 end
 if Controller(msg_chat_id,UserId_Info.id) == 'المبرمج سيزر' then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,UserId_Info.id).." •*","md",true)  
-end
-if Controller(msg_chat_id,UserId_Info.id) == 'المبرمج عموره' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,UserId_Info.id).." •*","md",true)  
 end
 if Redis:sismember(SEZR.."SEZR:BanAll:Groups",UserId_Info.id) then
@@ -4601,7 +4596,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4628,7 +4623,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4640,9 +4635,6 @@ if Controller(msg_chat_id,UserId_Info.id) == 'المطور الثانوي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,UserId_Info.id).." •*","md",true)  
 end
 if Controller(msg_chat_id,UserId_Info.id) == 'المبرمج سيزر' then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,UserId_Info.id).." •*","md",true)  
-end
-if Controller(msg_chat_id,UserId_Info.id) == 'المبرمج عموره' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,UserId_Info.id).." •*","md",true)  
 end
 if Redis:sismember(SEZR.."SEZR:ktmAll:Groups",UserId_Info.id) then
@@ -4666,7 +4658,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4701,7 +4693,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4737,7 +4729,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4768,7 +4760,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4797,7 +4789,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4832,7 +4824,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName[3] and UserName[3]:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4961,7 +4953,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -4993,7 +4985,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -5025,9 +5017,6 @@ if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المطور الث�
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,Message_Reply.sender.user_id).." •*","md",true)  
 end
 if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المبرمج سيزر' then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,Message_Reply.sender.user_id).." •*","md",true)  
-end
-if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المبرمج عموره' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,Message_Reply.sender.user_id).." •*","md",true)  
 end
 if Redis:sismember(SEZR.."SEZR:BanAll:Groups",Message_Reply.sender.user_id) then
@@ -5085,9 +5074,6 @@ if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المطور الث�
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,Message_Reply.sender.user_id).." •*","md",true)  
 end
 if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المبرمج سيزر' then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,Message_Reply.sender.user_id).." •*","md",true)  
-end
-if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المبرمج عموره' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,Message_Reply.sender.user_id).." •*","md",true)  
 end
 if Redis:sismember(SEZR.."SEZR:ktmAll:Groups",Message_Reply.sender.user_id) then
@@ -5382,7 +5368,10 @@ end
 if Controller(msg_chat_id,UserId) == 'المبرمج سيزر' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,UserId).." •*","md",true)  
 end
-if Controller(msg_chat_id,UserId) == 'المبرمج عموره' then
+if Controller(msg_chat_id,UserId) == 'المبرمج سيزر' then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,UserId).." •*","md",true)  
+end
+if Controller(msg_chat_id,UserId) == 'المبرمج جيكا' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع حظر عام• "..Controller(msg_chat_id,UserId).." •*","md",true)  
 end
 if Redis:sismember(SEZR.."SEZR:BanAll:Groups",UserId) then
@@ -5434,9 +5423,6 @@ if Controller(msg_chat_id,UserId) == 'المطور الثانوي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا لا تستطيع كتم  عام• "..Controller(msg_chat_id,UserId).." •*","md",true)  
 end
 if Controller(msg_chat_id,UserId) == 'المبرمج سيزر' then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n*  ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,UserId).." •*","md",true)  
-end
-if Controller(msg_chat_id,UserId) == 'المبرمج عموره' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*  ◉ عذرا لا تستطيع كتم عام• "..Controller(msg_chat_id,UserId).." •*","md",true)  
 end
 if Redis:sismember(SEZR.."SEZR:ktmAll:Groups",UserId) then
@@ -8385,7 +8371,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -8523,7 +8509,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName[1]:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -8592,7 +8578,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -8663,7 +8649,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -9389,7 +9375,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -9480,7 +9466,7 @@ if not UserId_Info.id then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا يوجد حساب بهاذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n ◉ عذرا لا تستطيع استخدام معرف البوت ","md",true)  
@@ -9741,59 +9727,7 @@ end
 if ban.first_name then
 Creat = " "..ban.first_name.." "
 else
-Creat = " Developers 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍\n"
-end
-local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
-if photo.total_count > 0 then
-local TestText = " • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •\n— — — — — — — — —\n ◉*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n◉ *Dev Bio* : [❲ "..Bio.." ❳]"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
-},
-{
-{text = '•𝙜𝙧𝙤𝙪𝙥•', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
-},
-{
-{text = '•𝙗𝙤𝙩 𝙨𝙚𝙯𝙧•',url="t.me/SEZR8Bot"}
-},
-}
-local msg_id = msg.id/2097152/0.5 
- https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-local TestText = "  • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •\n— — — — — — — — —\n ◉*Dev Name* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n◉ *Dev Bio* : [❲ "..Bio.." ❳]"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = ' • 𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر •', url = "https://t.me/ttccss"}
-},
-{
-{text = '•𝙜𝙧𝙤𝙪𝙥•', url = "https://t.me/br_selva"},{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = "https://t.me/RBBOU"}
-},
-{
-{text = '•𝙗𝙤𝙩 𝙨𝙚𝙯𝙧•',url="t.me/SEZR8Bot"}
-},
-}
-local msg_id = msg.id/2097152/0.5 
- https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-end
-end
-end
-
-if text == 'المبرمج سيزر' or text == 'سيزر' or text == 'مبرمج السورس' or text == '• المبرمج سيزر •' then    
-local UserId_Info = LuaTele.searchPublicChat("ttccss")
-if UserId_Info.id then
-local  ban = LuaTele.getUser(UserId_Info.id)
-local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
-if  bain.bio then
-Bio =  bain.bio
-else
-Bio = 'لا يوجد'
-end
-if ban.first_name then
-Creat = " "..ban.first_name.." "
-else
-Creat = " Developers 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍\n"
+Creat = " Developers FIRE\n"
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
@@ -9990,7 +9924,7 @@ keyboard.inline_keyboard = {
 },
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/gooman120/10761/'..photo..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/DEV_JABWA/88/'..photo..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 elseif text == 'بوت حذف' or text == 'بوت الحذف' or text == 'بووت حذف' then
 local user_info = LuaTele.getUser(msg.sender.user_id)
@@ -10011,7 +9945,6 @@ keyboard.inline_keyboard = {
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-
 elseif text == 'بوت تواصل' or text == 'بوت التواصل' or text == 'تواصل السورس' or text == 'التواصل' then
 local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
