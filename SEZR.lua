@@ -2424,6 +2424,16 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n⌔︙عليك الاشتراك �
 end
 LuaTele.sendText(msg_chat_id,msg_id,'*⌔︙عدد احصائيات البوت الكامله \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n⌔︙عدد المجموعات : '..(Redis:scard(SEZR..'SEZR:ChekBotAdd') or 0)..'\n⌔︙عدد المشتركين : '..(Redis:scard(SEZR..'SEZR:Num:User:Pv') or 0)..'*',"md",true)  
 end
+elseif text =='الاحصائيات' then 
+if not msg.ControllerBot then 
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
+end
+if ChannelJoin(msg) == false then
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/uui9u'}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n⌔︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
+end
+LuaTele.sendText(msg_chat_id,msg_id,'*⌔︙عدد احصائيات البوت الكامله \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n⌔︙عدد المجموعات : '..(Redis:scard(SEZR..'SEZR:ChekBotAdd') or 0..'*',"md",true)  
+end
 if text == 'تفعيل' and msg.Developers then
 if msg.can_be_deleted_for_all_users == false then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ◉ عذرا البوت ليس ادمن في الجروب يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
