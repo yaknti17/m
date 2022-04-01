@@ -12453,22 +12453,22 @@ data = {
 return LuaTele.sendText(msg_chat_id,msg_id,'**اهلا بك عزيزي المطور الاساسي* الاساسي*', 'md', false, false, false, false, reply_markup)
 end
 end
-if text == '𓄼 اوامر التفعيل 𓄹' then
+if text == '/start' then
 if not msg.ControllerBot then 
 end
 local reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
 {
-{text = '𓄼 تفعيل التواصل 𓄹',type = 'text'},{text = '𓄼 تعطيل التواصل 𓄹', type = 'text'},
+{text = 'تويت',type = 'text'},{text = 'استوري', type = 'text'},
 },
 {
-{text = '𓄼 تفعيل البوت الخدمي 𓄹',type = 'text'},{text = '𓄼 تعطيل البوت الخدمي 𓄹', type = 'text'},
+{text = 'صراحه',type = 'text'},{text = 'السورس', type = 'text'},
 },
 {
-{text = '𓄼 تعطيل الاذاعه 𓄹',type = 'text'},{text = '𓄼 تفعيل الاذاعه 𓄹',type = 'text'},
+{text = 'المطور',type = 'text'},{text = 'المبرمج سيزر',type = 'text'},
 },
 {
-{text = '𓄼 تعطيل المغادره 𓄹',type = 'text'},{text = '𓄼 تفعيل المغادره 𓄹',type = 'text'},
+{text = 'اريد تنصيب بوت',type = 'text'},{text = 'اريد  سورس',type = 'text'},
 },
 {
 {text = '𓄼 القائمه الرئيسيه 𓄹',type = 'text'},
