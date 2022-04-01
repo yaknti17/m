@@ -14195,31 +14195,6 @@ local TextHelp = [[*
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
-if Text and Text:match('(%d+)/mydev') then
-local UserId = Text:match('(%d+)/mydev')
-if tonumber(IdUser) == tonumber(UserId) then
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '• اوامر المطور •', data = IdUser..'/helpo1'}, {text = '• اوامر المطور الثانوي •', data = IdUser..'/helpo2'}, 
-},
-{
-{text = '• اوامر المطور الاساسي •', data = IdUser..'/helpo3'}, 
-},
-{
-{text = '• القائمه الرئيسيه •', data = IdUser..'/helpall'}, 
-},
-{
-{text = '• 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 •', url = 'https://t.me/RBBOU'}, 
-},
-}
-}
-local TextHelp = [[*
- مرحبا بك في قسم اوامر اصحاب الرتب
-*]]
-LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
-end
 elseif Text and Text:match('(%d+)/helpo1') then
 local UserId = Text:match('(%d+)/helpo1')
 if tonumber(IdUser) == tonumber(UserId) then
@@ -14415,8 +14390,8 @@ local TextHelp = [[*
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
-elseif Text and Text:match('(%d+)/help6') then
-local UserId = Text:match('(%d+)/help6')
+elseif Text and Text:match('(%d+)/mydev') then
+local UserId = Text:match('(%d+)/mydev')
 if tonumber(IdUser) == tonumber(UserId) then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
